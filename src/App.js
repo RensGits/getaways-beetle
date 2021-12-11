@@ -23,13 +23,13 @@ function App() {
 
   function Glb(){
 
-    let Component = Components[GlbComponentName]
+    let GLBComponent = Components[GlbComponentName]
     console.log(GlbComponentName)
 
     if(!GlbComponentName){
     }
     else return(
-      <Component/> 
+      <GLBComponent/> 
     )
   }
   
