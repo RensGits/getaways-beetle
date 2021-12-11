@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 import {useState, useEffect, Suspense} from 'react'
 import {Canvas} from '@react-three/fiber'
 import {OrbitControls, Sky} from '@react-three/drei';
