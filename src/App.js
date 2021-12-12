@@ -39,9 +39,9 @@ function App() {
 
   return (
     <div className = "canvas-container">
-      <h1 className = 'getaways-header'>GETAWAYS</h1>
+      <img className = 'getaways-header' src = "/getaways-logo.png"/>
       <Canvas
-        style={{position: 'fixed'}}
+        style={{position: 'fixed', height: '50%', width: '35%'}}
         camera = {{
           position: [10, 0, 29],
           fov: 25
