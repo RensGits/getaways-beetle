@@ -3,7 +3,7 @@ import { useGLTF, useAnimations} from '@react-three/drei'
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('https://gateway.pinata.cloud/ipfs/QmTcQxMiWfVoC942uicXdtNV6MXbA7gaQoiBbdynBSWwaP')
+  const { nodes, materials, animations } = useGLTF('/desert1.glb')
   const { actions } = useAnimations(animations, group)
   useEffect(()=> actions.float.play());
   
@@ -18,4 +18,4 @@ export default function Model({ ...props }) {
   )
 }
 
-useGLTF.preload('https://gateway.pinata.cloud/ipfs/QmTcQxMiWfVoC942uicXdtNV6MXbA7gaQoiBbdynBSWwaP')
+useGLTF.preload('/desert1.glb')
