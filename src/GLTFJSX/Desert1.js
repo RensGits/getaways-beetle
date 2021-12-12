@@ -8,7 +8,7 @@ export default function Model({ ...props }) {
   useEffect(()=> actions.float.play());
   
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null} position={[0,-1.4,0]}>
       <group name="Plane077" position={[0, 0.02, -0.05]} rotation={[-0.09, -0.08, -0.3]} scale={0.88}>
         <mesh geometry={nodes.Plane073.geometry} material={materials['Material.042']} />
         <mesh geometry={nodes.Plane073_1.geometry} material={materials['Material.002']} />

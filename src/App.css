@@ -1,4 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav');
+
 .canvas-container{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
     height: 100%;
     width: 100%;
+    z-index: 100;
+}
+
+.getaways-header{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Yantramanav';
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    z-index: 0;
 }

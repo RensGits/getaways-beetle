@@ -39,7 +39,9 @@ function App() {
 
   return (
     <div className = "canvas-container">
+      <h1 className = 'getaways-header'>GETAWAYS</h1>
       <Canvas
+        style={{position: 'fixed'}}
         camera = {{
           position: [10, 0, 29],
           fov: 25
@@ -47,9 +49,10 @@ function App() {
       >
         <Suspense fallback = {CustomLoader}>
           <group position={[4.05, 6.31, -1.05]} rotation={[1.89, 0.88, -2.05]}>
-            <spotLight intensity={1} angle={1} penumbra={1} decay={2} rotation={[-Math.PI / 2, 0, 0]} />
+            <spotLight intensity={1} angle={3} penumbra={1} decay={2} rotation={[-Math.PI / 2, 0, 0]} />
+            <ambientLight intensity={0.05}/>
           </group>
-          <OrbitControls enableZoom={false}/>
+          <OrbitControls enableZoom={false} enablePan={false}/>
           <Sky azimuth={0.5} inclination={5} />
           <Glb/>
         </Suspense>
