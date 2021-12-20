@@ -58,10 +58,9 @@ function App() {
           <Glb/>
         </Suspense>
       </Canvas>
-      <img className = 'getaways-header' src = {logo} onClick={(e) => {
-      e.preventDefault();
-      window.open('https://projectgetaways.com', "_blank")
-      }}/>
+      <a href="https://projectgetaways.com" target = "_blank">
+      <img className = 'getaways-header' src = {logo} />
+      </a>
     </div>
   );
 }
