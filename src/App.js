@@ -6,6 +6,7 @@ import {OrbitControls, Sky} from '@react-three/drei';
 import CustomLoader from './Functional/CustomLoader';
 import Desert1 from './GLTFJSX/Desert1.js'
 import Desert2 from './GLTFJSX/Desert2.js'
+import logo from './Images/getaways-logo.png'
 
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
           <Glb/>
         </Suspense>
       </Canvas>
-      <img className = 'getaways-header' src = "/getaways-logo.png" onClick={(e) => {
+      <img className = 'getaways-header' src = {logo} onClick={(e) => {
       e.preventDefault();
       window.open('https://projectgetaways.com', "_blank")
       }}/>
