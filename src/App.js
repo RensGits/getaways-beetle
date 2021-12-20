@@ -39,9 +39,9 @@ function App() {
 
   return (
     <div className = "canvas-container">
-      <img className = 'getaways-header' src = "/getaways-logo.png"/>
+   
       <Canvas
-        style={{position: 'fixed', height: '50%', width: '35%'}}
+        style={{ height: '100%', width: '100%'}}
         camera = {{
           position: [10, 0, 29],
           fov: 25
@@ -57,6 +57,10 @@ function App() {
           <Glb/>
         </Suspense>
       </Canvas>
+      <img className = 'getaways-header' src = "/getaways-logo.png" onClick={(e) => {
+      e.preventDefault();
+      window.open('https://projectgetaways.com', "_blank")
+      }}/>
     </div>
   );
 }

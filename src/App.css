@@ -1,18 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav');
 
 .canvas-container{
-   
-    height: 50%;
-    width: 50%;
+    position: relative;
     z-index: 100;
+    width: 45em;
+    height: 80%;
+    background-color: whitesmoke;
 }
 
 .getaways-header{
     position: absolute;
-    top:48%;
-    left:31.55%;
-    transform: translate(-50%,-50%);
-    width: 5%;
+    bottom: 1em;
+    right:1em;
+    width: 7em;
     z-index: 1000;
  
+}
+
+.getaways-header:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 740px) {
+    .canvas-container{
+        width: 90%;
+        height: 60%
+    }
+}
+    @media only screen and (max-width: 450px) {
+        .canvas-container{
+            width: 90%;
+            height: 40%
+        }
+        .getaways-header{
+            width: 5.5em;
+            bottom: 0.8em;
+            right: 0.8em;
+        }
+}
+
+@media only screen and (max-width: 300px) {
+    .canvas-container{
+        width: 90%;
+        height: 30%
+    }
+    .getaways-header{
+        width: 4em;
+        bottom: 0.6em;
+        right: 0.6em;
+    }
 }
