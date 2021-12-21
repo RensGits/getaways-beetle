@@ -6,6 +6,7 @@ import {OrbitControls, Sky} from '@react-three/drei';
 import CustomLoader from './Functional/CustomLoader';
 import Desert1 from './GLTFJSX/Desert1.js'
 import Desert2 from './GLTFJSX/Desert2.js'
+import Beetle from './GLTFJSX/Beetle.js'
 import logo from './Images/getaways-logo.png'
 
 
@@ -14,7 +15,8 @@ function App() {
   const [GlbComponentName,setGlbComponentName] = useState('')
   const Components = {
     Desert1,
-    Desert2
+    Desert2,
+    Beetle
   }
 
   function Glb(){
@@ -47,6 +49,8 @@ function App() {
           position: [10, 0, 29],
           fov: 25
         }}
+        shadows
+        
       >
         <Suspense fallback = {CustomLoader}>
           <group position={[4.05, 6.31, -1.05]} rotation={[1.89, 0.88, -2.05]}>
@@ -54,7 +58,7 @@ function App() {
             <ambientLight intensity={0.05}/>
           </group>
           <OrbitControls enableZoom={false} enablePan={false}/>
-          <Sky azimuth={0.5} inclination={5} />
+          {/* <Sky azimuth={0.5} inclination={5} /> */}
           <Glb/>
         </Suspense>
       </Canvas>
