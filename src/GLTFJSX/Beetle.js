@@ -18,7 +18,7 @@ export default function Model({ ...props }) {
     rings: 11, // Rings (default: 11) must be a int
   });
   return (
-    <group ref={group} {...props} dispose={null} scale = {0.4} position={[0,-1,0]} >
+    <group ref={group} {...props} dispose={null} scale = {0.4} position={[0,-1,1]} >
       <group name="Armature" rotation={[0.06, 0, 0]}>
         <primitive object={nodes.root} />
         <primitive object={nodes.IKtargetL} />

@@ -4,8 +4,6 @@ import {useState, useEffect, Suspense} from 'react'
 import {Canvas} from '@react-three/fiber'
 import {OrbitControls, Sky} from '@react-three/drei';
 import CustomLoader from './Functional/CustomLoader';
-import Desert1 from './GLTFJSX/Desert1.js'
-import Desert2 from './GLTFJSX/Desert2.js'
 import Beetle from './GLTFJSX/Beetle.js'
 import logo from './Images/getaways-logo.png'
 
@@ -14,8 +12,6 @@ function App() {
 
   const [GlbComponentName,setGlbComponentName] = useState('')
   const Components = {
-    Desert1,
-    Desert2,
     Beetle
   }
 
@@ -58,7 +54,7 @@ function App() {
             <ambientLight intensity={0.05}/>
           </group>
           <OrbitControls enableZoom={false} enablePan={false}/>
-          {/* <Sky azimuth={0.5} inclination={5} /> */}
+          <Sky azimuth={0.5} inclination={0.7} />
           <Glb/>
         </Suspense>
       </Canvas>
