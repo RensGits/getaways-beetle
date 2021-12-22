@@ -3,7 +3,7 @@ import { useGLTF, useAnimations, softShadows } from '@react-three/drei'
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/beetle.glb')
+  const { nodes, materials, animations } = useGLTF('beetle.glb')
   const { actions } = useAnimations(animations, group)
   useEffect(()=> actions.idleanimations.play());
   softShadows({
@@ -78,4 +78,4 @@ export default function Model({ ...props }) {
   )
 }
 
-useGLTF.preload('/beetle.glb')
+useGLTF.preload('beetle.glb')
