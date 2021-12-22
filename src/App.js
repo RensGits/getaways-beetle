@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react'
 import {Suspense} from 'react'
 import {Canvas} from '@react-three/fiber'
-import {OrbitControls, Sky} from '@react-three/drei';
+import {OrbitControls} from '@react-three/drei';
 import CustomLoader from './Functional/CustomLoader';
 import Beetle from './GLTFJSX/Beetle.js'
 import logo from './Images/getaways-logo.png'
@@ -28,12 +28,11 @@ function App() {
             <ambientLight intensity={0.05}/>
           </group>
           <OrbitControls enableZoom={false} enablePan={false}/>
-          {/* <Sky azimuth={0.5} inclination={5} /> */}
           <Beetle/>
         </Suspense>
       </Canvas>
-      <a href="https://projectgetaways.com" target = "_blank">
-      <img className = 'getaways-header' src = {logo} />
+      <a href="https://projectgetaways.com" target = "_blank" rel="noopener noreferrer">
+      <img className = 'getaways-header' src = {logo} alt="" />
       </a>
     </div>
   );
