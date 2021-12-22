@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react'
-import {useState, useEffect, Suspense} from 'react'
+import {Suspense} from 'react'
 import {Canvas} from '@react-three/fiber'
 import {OrbitControls, Sky} from '@react-three/drei';
 import CustomLoader from './Functional/CustomLoader';
@@ -9,32 +9,6 @@ import logo from './Images/getaways-logo.png'
 
 
 function App() {
-
-  const [GlbComponentName,setGlbComponentName] = useState('')
-  const Components = {
-    Beetle
-  }
-
-  function Glb(){
-
-    let GLBComponent = Components[GlbComponentName]
-    console.log(GlbComponentName)
-
-    if(!GlbComponentName){
-    }
-    else return(
-      <GLBComponent/> 
-    )
-  }
-  
-
-  useEffect(() =>{
-    const params = new URLSearchParams(window.location.search)
-    const GlbFileNameFromUrl = params.get("fileName")
-    setGlbComponentName(GlbFileNameFromUrl)
-  },[GlbComponentName])
-
-  
 
   return (
     <div className = "canvas-container">
@@ -54,8 +28,8 @@ function App() {
             <ambientLight intensity={0.05}/>
           </group>
           <OrbitControls enableZoom={false} enablePan={false}/>
-          <Sky azimuth={0.5} inclination={0.7} />
-          <Glb/>
+          {/* <Sky azimuth={0.5} inclination={5} /> */}
+          <Beetle/>
         </Suspense>
       </Canvas>
       <a href="https://projectgetaways.com" target = "_blank">
