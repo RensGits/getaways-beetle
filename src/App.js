@@ -31,7 +31,7 @@ function App() {
           <Beetle/>
         </Suspense>
       </Canvas>
-      <a href="https://projectgetaways.com" target = "_blank" rel="noopener noreferrer">
+      <a href="https://projectgetaways.com" target = "_blank" rel="noopener noreferrer" sandbox="allow-popups allow-popups-to-escape-sandbox">
       <img className = 'getaways-header' src = {logo} alt="" />
       </a>
     </div>

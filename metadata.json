@@ -1,0 +1,15 @@
+{
+	"721": {
+		"##policyID##": {
+			"##ticker##": {
+				"name": "##tokenName##",
+				"image": "ipfs://QmZcH89G8qMzvrC1HpuoW1Yq7wrJNXimtL8AhvHEYGo5iJ",
+				"description": "A test for the upcoming project 'Getaways'",
+				"files": [{
+					"mediaType": "text/html",
+					"src": "Qmccyr9kqox8tBkKXmuVniAFk7mBSWUv3hjcrjUt5qkGSP"
+				}]
+			}
+		}
+	}
+}
