@@ -1,14 +1,56 @@
 import './App.css';
-import React from 'react'
-import {Suspense} from 'react'
+import React, {Suspense, useState, useEffect} from 'react'
 import {Canvas} from '@react-three/fiber'
 import {OrbitControls} from '@react-three/drei';
 import CustomLoader from './Functional/CustomLoader';
-import Beetle from './GLTFJSX/Beetle.js'
 import logo from './Images/getaways-logo.png'
+import LogPusher from './GLTFJSX/LogPusher.js';
+import PetalFolder from './GLTFJSX/PetalFolder.js';
+import TreasureKeeper from './GLTFJSX/TreasureKeeper.js';
+import LightfootDaybreaker from './GLTFJSX/LightfootDaybreaker.js';
+import GoldbackTrapper from './GLTFJSX/GoldbackTrapper.js';
+import ForestDefender from './GLTFJSX/ForestDefender.js';
+import DesertCrawler from './GLTFJSX/DesertCrawler.js';
+import CloudHopper from './GLTFJSX/CloudHopper.js';
+import CherryNibbler from './GLTFJSX/CherryNibbler.js';
+
 
 
 function App() {
+
+  const [GlbComponentName,setGlbComponentName] = useState('')
+  const Components = {
+    LogPusher,
+    PetalFolder,
+    TreasureKeeper,
+    LightfootDaybreaker,
+    GoldbackTrapper,
+    ForestDefender,
+    DesertCrawler,
+    CloudHopper,
+    CherryNibbler
+  }
+
+  function Glb(){
+
+    let GLBComponent = Components[GlbComponentName]
+    console.log(GlbComponentName)
+
+    if(!GlbComponentName){
+      return null
+    }
+    else return(
+      <GLBComponent/> 
+    )
+  }
+  
+  useEffect(() =>{
+    const params = new URLSearchParams(window.location.search)
+    const GlbFileNameFromUrl = params.get("beetle")
+    setGlbComponentName(GlbFileNameFromUrl)
+  },[GlbComponentName])
+
+  
 
   return (
     <div className = "canvas-container">
@@ -28,12 +70,10 @@ function App() {
             <ambientLight intensity={0.05}/>
           </group>
           <OrbitControls enableZoom={false} enablePan={false}/>
-          <Beetle/>
+          <Glb/> 
         </Suspense>
       </Canvas>
-      <a href="https://projectgetaways.com" target = "_blank" rel="noopener noreferrer" sandbox="allow-popups allow-popups-to-escape-sandbox">
       <img className = 'getaways-header' src = {logo} alt="" />
-      </a>
     </div>
   );
 }

@@ -17,6 +17,7 @@ export default function Model({ ...props }) {
     samples: 100,
     rings: 11,
   });
+
   return (
     <group ref={group} {...props} dispose={null} scale = {0.4} position={[0,-1,1]}>
       <group name="Armature" rotation={[0.06, 0, 0]}>
@@ -34,67 +35,80 @@ export default function Model({ ...props }) {
         <primitive object={nodes.IKpole2R} />
         <primitive object={nodes.IKtarget3R} />
         <primitive object={nodes.IKTarget3R} />
-        {/* body */}
-        <skinnedMesh  castShadow geometry={nodes.Cube002.geometry} material={materials['1']}  skeleton={nodes.Cube002.skeleton}  />
-        <skinnedMesh  castShadow
+        <skinnedMesh castShadow
+          geometry={nodes.Cube002.geometry} 
+          material={materials['9']} //body//
+          skeleton={nodes.Cube002.skeleton} />
+
+        <skinnedMesh castShadow
           geometry={nodes.Cube002_1.geometry}
-          material={materials['2']} //legs
+          material={materials['10']} //legs//
           skeleton={nodes.Cube002_1.skeleton}
         />
         <skinnedMesh castShadow
           geometry={nodes.Cube002_2.geometry}
-          material={materials['3']} // eyes & antennas
+          material={materials['4']} //eyes&antenas//
           skeleton={nodes.Cube002_2.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_3.geometry}
           material={materials['4']}
           skeleton={nodes.Cube002_3.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_4.geometry}
           material={materials['5']}
           skeleton={nodes.Cube002_4.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_5.geometry}
           material={materials['6']}
           skeleton={nodes.Cube002_5.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_6.geometry}
           material={materials['7']}
           skeleton={nodes.Cube002_6.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_7.geometry}
           material={materials['8']}
           skeleton={nodes.Cube002_7.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_8.geometry}
           material={materials['9']}
           skeleton={nodes.Cube002_8.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_9.geometry}
           material={materials['10']}
           skeleton={nodes.Cube002_9.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_10.geometry}
           material={materials['11']}
           skeleton={nodes.Cube002_10.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_11.geometry}
           material={materials['12']}
           skeleton={nodes.Cube002_11.skeleton}
         />
-        <skinnedMesh  castShadow
+        <skinnedMesh
           geometry={nodes.Cube002_12.geometry}
           material={materials['13']}
           skeleton={nodes.Cube002_12.skeleton}
+        />
+        <skinnedMesh
+          geometry={nodes.Cube002_13.geometry}
+          material={materials['14']}
+          skeleton={nodes.Cube002_13.skeleton}
+        />
+        <skinnedMesh
+          geometry={nodes.Cube002_14.geometry}
+          material={materials['15']}
+          skeleton={nodes.Cube002_14.skeleton}
         />
 
         <directionalLight
@@ -109,21 +123,15 @@ export default function Model({ ...props }) {
               shadow-camera-top={15}
               shadow-camera-bottom={-15}
         />
-        
-
-
-
       </group>
-      <mesh
-              receiveShadow
-              rotation={[-Math.PI / 2, 0, 1]}
-              position={[0, 0, 0]}
-              
-            >
-              <planeBufferGeometry args={[200, 200]} />
-              <shadowMaterial attach='material' opacity={0.3} />
-            </mesh>
-
+        <mesh
+          receiveShadow
+          rotation={[-Math.PI / 2, 0, 1]}
+          position={[0, 0, 0]}    
+        >
+          <planeBufferGeometry args={[200, 200]} />
+          <shadowMaterial attach='material' opacity={0.3} />
+        </mesh>
     </group>
   )
 }
