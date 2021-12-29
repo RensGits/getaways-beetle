@@ -16,10 +16,6 @@
     z-index: 1000;
 }
 
-.getaways-header:hover{
-    cursor: pointer;
-}
-
 
 @media only screen and (max-width: 800px) {
     .canvas-container{
@@ -29,14 +25,12 @@
 }
 
 
-    @media only screen and (max-width: 600px) {
-
-
-        .getaways-header{
+@media only screen and (max-width: 600px) {
+    .getaways-header{
             width: 5em;
             bottom: 0.8em;
             right: 0.8em;
-        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -47,7 +41,6 @@
 }
 
 @media only screen and (max-width: 300px) {
- 
     .getaways-header{
         width: 4em;
         bottom: 0.6em;

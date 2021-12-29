@@ -15,11 +15,10 @@ import CloudHopper from './GLTFJSX/CloudHopper.js';
 import CherryNibbler from './GLTFJSX/CherryNibbler.js';
 
 
-
 function App() {
 
-  const [GlbComponentName,setGlbComponentName] = useState('')
-  const Components = {
+  const [GlbComponentName,setGlbComponentName] = useState('')  // state object for setting name of what should be returned in Glb component 
+  const Components = { // Components object necessary for setting component below
     LogPusher,
     PetalFolder,
     TreasureKeeper,
@@ -31,12 +30,19 @@ function App() {
     CherryNibbler
   }
 
-  function Glb(){
+
+  useEffect(() =>{   
+    const params = new URLSearchParams(window.location.search)
+    const GlbFileNameFromUrl = params.get("beetle")
+    setGlbComponentName(GlbFileNameFromUrl)
+  },[GlbComponentName])
+
+  
+  function Glb(){ 
 
     let GLBComponent = Components[GlbComponentName]
-    console.log(GlbComponentName)
-
-    if(!GlbComponentName){
+ 
+    if(!GlbComponentName){  
       return null
     }
     else return(
@@ -44,17 +50,9 @@ function App() {
     )
   }
   
-  useEffect(() =>{
-    const params = new URLSearchParams(window.location.search)
-    const GlbFileNameFromUrl = params.get("beetle")
-    setGlbComponentName(GlbFileNameFromUrl)
-  },[GlbComponentName])
-
   
-
   return (
     <div className = "canvas-container">
-   
       <Canvas
         style={{ height: '100%', width: '100%'}}
         camera = {{
@@ -62,7 +60,6 @@ function App() {
           fov: 25
         }}
         shadows
-        
       >
         <Suspense fallback = {CustomLoader}>
           <group position={[4.05, 6.31, -1.05]} rotation={[1.89, 0.88, -2.05]}>

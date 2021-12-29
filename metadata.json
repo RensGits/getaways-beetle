@@ -1,13 +1,196 @@
+
+// LOG PUSHER //
+
 {
 	"721": {
 		"##policyID##": {
 			"##ticker##": {
 				"name": "##tokenName##",
-				"image": "ipfs://QmZcH89G8qMzvrC1HpuoW1Yq7wrJNXimtL8AhvHEYGo5iJ",
-				"description": "A test for the upcoming project 'Getaways'",
+				"image": "bafybeia4ruprj4y4oei4zev4yki7cllah2p2wia37fpymbslpprl76jek4",
+				"project": "Getaways",
+				"series": "Wildlife",
+				"type": "Beetle",
+				"species" : "Log Pusher",
+				"website": "https://projectgetaways.com",
 				"files": [{
 					"mediaType": "text/html",
-					"src": "Qmccyr9kqox8tBkKXmuVniAFk7mBSWUv3hjcrjUt5qkGSP"
+					"src": "QmQkT1BWXBGkiBj3srdpwuBUg22gpJPyfdohWPXdm4ZjVp/?beetle=LogPusher"
+				}]
+			}
+		}
+	}
+}
+
+// DESERT CRAWLER //
+
+{
+	"721": {
+		"##policyID##": {
+			"##ticker##": {
+				"name": "##tokenName##",
+				"image": "bafybeihl6rsp4fxtyfmm5ui7zykh77oaumglwsse6upv3lanpe6hbmsnma",
+				"project": "Getaways",
+				"series": "Wildlife",
+				"type": "Beetle",
+				"species" : "Desert Crawler",
+				"website": "https://projectgetaways.com",
+				"files": [{
+					"mediaType": "text/html",
+					"src": "QmQkT1BWXBGkiBj3srdpwuBUg22gpJPyfdohWPXdm4ZjVp/?beetle=DesertCrawler"
+				}]
+			}
+		}
+	}
+}
+
+// CLOUD HOPPER //
+
+{
+	"721": {
+		"##policyID##": {
+			"##ticker##": {
+				"name": "##tokenName##",
+				"image": "bafybeihrozjbtxbvhongxnritkidlxkea3tnjqsbpcht43kihh7ipf7rk4",
+				"project": "Getaways",
+				"series": "Wildlife",
+				"type": "Beetle",
+				"species" : "Cloud Hopper",
+				"website": "https://projectgetaways.com",
+				"files": [{
+					"mediaType": "text/html",
+					"src": "QmQkT1BWXBGkiBj3srdpwuBUg22gpJPyfdohWPXdm4ZjVp/?beetle=CloudHopper"
+				}]
+			}
+		}
+	}
+}
+
+// LIGHTFOOT DAYBREAKER //
+
+{
+	"721": {
+		"##policyID##": {
+			"##ticker##": {
+				"name": "##tokenName##",
+				"image": "bafybeibi2icwbugto5y7yaxnub2smoqxn6clwbzqvld735elkbbujiuhpu",
+				"project": "Getaways",
+				"series": "Wildlife",
+				"type": "Beetle",
+				"species" : "Lightfoot Daybreaker",
+				"website": "https://projectgetaways.com",
+				"files": [{
+					"mediaType": "text/html",
+					"src": "QmQkT1BWXBGkiBj3srdpwuBUg22gpJPyfdohWPXdm4ZjVp/?beetle=LightfootDaybreaker"
+				}]
+			}
+		}
+	}
+}
+
+// PETAL FOLDER
+
+{
+	"721": {
+		"##policyID##": {
+			"##ticker##": {
+				"name": "##tokenName##",
+				"image": "bafybeig74a6tmo5mbh7mllg5tnto74biducudjolxvgglu7j44s55druai",
+				"project": "Getaways",
+				"series": "Wildlife",
+				"type": "Beetle",
+				"species" : "Petal Folder",
+				"website": "https://projectgetaways.com",
+				"files": [{
+					"mediaType": "text/html",
+					"src": "QmQkT1BWXBGkiBj3srdpwuBUg22gpJPyfdohWPXdm4ZjVp/?beetle=PetalFolder"
+				}]
+			}
+		}
+	}
+}
+
+// FOREST DEFENDER
+
+{
+	"721": {
+		"##policyID##": {
+			"##ticker##": {
+				"name": "##tokenName##",
+				"image": "bafybeidz7typw7qifan7gdkzi37y3ebqvxh7ftlupbqp5eiyu66ncaevpq",
+				"project": "Getaways",
+				"series": "Wildlife",
+				"type": "Beetle",
+				"species" : "Forest Defender",
+				"website": "https://projectgetaways.com",
+				"files": [{
+					"mediaType": "text/html",
+					"src": "QmQkT1BWXBGkiBj3srdpwuBUg22gpJPyfdohWPXdm4ZjVp/?beetle=ForestDefender"
+				}]
+			}
+		}
+	}
+}
+
+// CHERRY NIBBLER
+
+{
+	"721": {
+		"##policyID##": {
+			"##ticker##": {
+				"name": "##tokenName##",
+				"image": "bafybeiadmyrjrzjkmncghjxy6oslrdvdpmbldbrfiszupekeaigaceaxya",
+				"project": "Getaways",
+				"series": "Wildlife",
+				"type": "Beetle",
+				"species" : "Cherry Nibbler",
+				"website": "https://projectgetaways.com",
+				"files": [{
+					"mediaType": "text/html",
+					"src": "QmQkT1BWXBGkiBj3srdpwuBUg22gpJPyfdohWPXdm4ZjVp/?beetle=CherryNibbler"
+				}]
+			}
+		}
+	}
+}
+
+// GOLDBACK TRAPPER //
+
+{
+	"721": {
+		"##policyID##": {
+			"##ticker##": {
+				"name": "##tokenName##",
+				"image": "bafybeifjpis3lk2y2nt2mxzpej4jeozha3njw4ui7oxnipj5a3lxeni2we",
+				"project": "Getaways",
+				"series": "Wildlife",
+				"type": "Beetle",
+				"species" : "Goldback Trapper",
+				"website": "https://projectgetaways.com",
+				"files": [{
+					"mediaType": "text/html",
+					"src": "QmQkT1BWXBGkiBj3srdpwuBUg22gpJPyfdohWPXdm4ZjVp/?beetle=GoldbackTrapper"
+				}]
+			}
+		}
+	}
+}
+
+// TREASURE KEEPER //
+
+{
+	"721": {
+		"##policyID##": {
+			"##ticker##": {
+				"name": "##tokenName##",
+				"image": "bafybeifgygmjmc53l65qtfhlxm4dwdw7ljhbqbqkzqanbhghvt2yazzrfi",
+				"project": "Getaways",
+				"series": "Wildlife",
+				"type": "Beetle",
+				"species" : "Treasure Keeper",
+				"website": "https://projectgetaways.com",
+				"files": [{
+					"mediaType": "text/html",
+					"src": "QmQkT1BWXBGkiBj3srdpwuBUg22gpJPyfdohWPXdm4ZjVp/?beetle=TreasureKeeper"
 				}]
 			}
 		}
